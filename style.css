@@ -1,0 +1,766 @@
+:root {
+    --bs-font-sans-serif: "Roboto", system-ui, -apple-system, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+    background-color: #E8F5E9;
+}
+
+nav {
+    background-color: #1B5E20;
+    height: 75px;
+    margin-bottom: 50px;
+}
+
+/*Botones nav*/
+.nav-link {
+    color: white;
+    background-color: #1B5E20;
+    text-align: center;
+}
+
+.nav-link:hover {
+    color: white;
+    background-color: #2E7D32;
+}
+
+.nav-link:focus {
+    color: white;
+    background-color: #1B5E20;
+}
+
+#btnTabPerfil {
+    justify-content: center;
+}
+
+/*Quitar flechas input number*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/*Quitar scrollbar*/
+::-webkit-scrollbar {
+    display: none;
+}
+
+.botonOpcion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-body {
+    padding: 10px;
+}
+
+.calendar-week-day {
+    height: 50px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-weight: 600;
+}
+
+.calendar-week-day div {
+    display: grid;
+    place-items: center;
+    color: var(--bg-second);
+}
+
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    font-weight: 600;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    max-width: 20%;
+    width: auto;
+    min-width: 10%;
+}
+
+#idSaldo {
+    text-align: left;
+}
+
+
+#modalFinalizado {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#modalFinalizado h4 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #162938;
+    padding: 0 0 10px 0;
+}
+
+
+#modalFinalizado div {
+    text-align: center;
+    color: #162938;
+    padding-top: 5%;
+    font-size: 1.1em;
+}
+
+#modalErrorOrdenar {
+    position: relative;
+    width: 750px;
+    height: 150px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#modalErrorOrdenar h4 {
+    text-align: center;
+    color: #162938;
+}
+
+#divModalErrorOrdenar {
+    text-align: center;
+    color: #162938;
+    font-size: 1.1em;
+}
+
+
+#modalErrorPagar {
+    position: relative;
+    width: 650px;
+    height: 150px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#modalErrorPagar h4 {
+    text-align: center;
+    color: #162938;
+}
+
+#divModalErrorPagar {
+    text-align: center;
+    color: #162938;
+    font-size: 1.1em;
+}
+
+#modalMenu {
+    position: relative;
+    width: 500px;
+    height: 450px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#modalMenu h3 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #162938;
+    padding-bottom: 5px;
+}
+
+
+#modalMenu div {
+    color: #162938;
+    padding-top: 5%;
+    font-size: 1.1em;
+}
+
+#modalMenu #divBotonesOpcion {
+    color: #162938;
+    align-items: center;
+    padding-left: 14%;
+}
+
+#spanPlatoPrincipal {
+    width: 208px;
+}
+
+#spanPostre {
+    width: 208px;
+}
+
+#spanPrecio {
+    width: 208px;
+}
+
+#spanPlatoPrincipalCal {
+    width: 208px;
+}
+
+#spanPostreCal {
+    width: 208px;
+}
+
+#spanCalTot {
+    width: 208px;
+}
+
+.botonOpcion {
+    width: 35%;
+    background: #162938;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 0.8em;
+    cursor: pointer;
+    margin: 0 0 5px 15px;
+}
+
+.list-group-horizontal>.list-group-item+.list-group-item.active {
+    margin-left: 15px;
+    background-color: #0277BD;
+}
+
+.list-group-horizontal>.list-group-item:last-child:not(:first-child) {
+    border-radius: 20px;
+}
+
+.list-group-horizontal>.list-group-item:first-child:not(:last-child) {
+    border-radius: 20px;
+}
+
+.list-group {
+    --bs-list-group-active-bg: #0277BD;
+    --bs-list-group-active-border-color: #0277BD;
+    --bs-list-group-action-hover-color: white;
+    --bs-list-group-action-hover-bg: #2E7D32;
+    --bs-list-group-action-active-color: white;
+    --bs-list-group-action-active-bg: #2E7D32;
+}
+
+#modalCargarSaldo {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-boxSaldo h3 {
+    font-size: 2em;
+    text-align: center;
+    color: #162938;
+    padding: 0 0 45px 0;
+}
+
+.inputBoxSaldo {
+    position: relative;
+    width: 90%;
+    left: 8%;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.inputBoxSaldo label {
+    position: absolute;
+    top: 0%;
+    left: 0px;
+    transform: translate(-120%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.inputBoxSaldo input {
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.inputBoxSaldo .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 30px;
+}
+
+#divErrorSaldo {
+    text-align: center;
+    font-size: 1.1em;
+    color: #162938;
+}
+
+
+#modalAgregarComensal {
+    position: relative;
+    width: 500px;
+    height: 440px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#modalComprarMenu {
+    position: relative;
+    width: 500px;
+    height: 440px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.form-boxComensal h3 {
+    font-size: 2em;
+    text-align: center;
+    color: #162938;
+    padding: 40px 0 45px 0;
+}
+
+.inputBoxComensal {
+    position: relative;
+    width: 75%;
+    left: 15%;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+.inputBoxComensal label {
+    position: absolute;
+    top: 10%;
+    left: 0px;
+    transform: translate(-120%);
+    font-size: 1em;
+    color: #162938;
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.inputBoxComensal input {
+    width: 100%;
+    height: 60%;
+    background: white;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.inputBoxComensal .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 30px;
+}
+
+#divErrorComensal {
+    text-align: center;
+    font-size: 1.1em;
+    color: #162938;
+}
+
+#modalPendientes {
+    position: relative;
+    width: 500px;
+    height: 450px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#modalPendientes h3 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #162938;
+    padding-bottom: 5px;
+}
+
+
+#modalPendientes div {
+    color: #162938;
+    padding-top: 5%;
+    font-size: 1.1em;
+}
+
+#modalPendientes #divBotonesOpcion {
+    color: #162938;
+    align-items: center;
+    padding-left: 14%;
+}
+
+#spanPlatoPrincipalPen {
+    width: 208px;
+}
+
+#spanPostrePen {
+    width: 208px;
+}
+
+#spanPrecioPen {
+    width: 208px;
+}
+
+#spanPlatoPrincipalCalPen {
+    width: 208px;
+}
+
+#spanPostreCalPen {
+    width: 208px;
+}
+
+#spanCalTotPen {
+    width: 208px;
+}
+
+
+#modalCompletados {
+    position: relative;
+    width: 500px;
+    height: 450px;
+    background: white;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    padding: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#modalCompletados h3 {
+    font-size: 1.8em;
+    text-align: center;
+    color: #162938;
+    padding-bottom: 5px;
+}
+
+
+#modalCompletados div {
+    color: #162938;
+    padding-top: 5%;
+    font-size: 1.1em;
+}
+
+#modalCompletados #divBotonesOpcion {
+    color: #162938;
+    align-items: center;
+    padding-left: 14%;
+}
+
+#spanPlatoPrincipalCom {
+    width: 208px;
+}
+
+#spanPostreCom {
+    width: 208px;
+}
+
+#spanPrecioCom {
+    width: 208px;
+}
+
+#spanPlatoPrincipalCalCom {
+    width: 208px;
+}
+
+#spanPostreCalCom {
+    width: 208px;
+}
+
+#spanCalTotCom {
+    width: 208px;
+}
+
+
+dialog .icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: #1B5E20;
+    font-size: 2em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+.botonModal {
+    width: 100%;
+    bottom: 10%;
+    height: 45px;
+    background-color: #1B5E20;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    margin: 20px 0 5px;
+}
+
+.botonModal:hover {
+    color: white;
+    background-color: #2E7D32;
+}
+
+
+
+button:active {
+    background-color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.botonOpcion {
+    color: white;
+    background-color: #1B5E20;
+}
+
+/*Contenedor perfil*/
+.contenedorPerfil {
+    display: flex;
+    height: 70vh;
+    background-color: white;
+    padding: 0;
+}
+
+.contenedorDivisiones {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+}
+
+/*Contenedor saldo*/
+.subtitulos {
+    color: white;
+    font-size: calc(1.375rem + 0.5vw);
+    background-color: #1B5E20;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    height: 15%;
+}
+
+
+
+.der {
+    border-right: 1px solid white;
+}
+
+.izq {
+    border-left: 1px solid white;
+}
+
+.btn-info {
+    color: white;
+    background-color: #0277BD;
+    border: 0;
+    height: 10%;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.btn-info:hover {
+    background-color: #039BE5;
+}
+
+#etiquetaSaldo {
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/*Contenedor comensal*/
+.btnEliminarComensal {
+    height: 35px;
+    width: 50px;
+    margin-bottom: 5px;
+    background-color: #0277BD;
+    color: white;
+}
+
+.btnEliminarComensal:hover {
+    background-color: #039BE5;
+}
+
+#contenedorListas {
+    display: flex;
+    height: 50%;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: center;
+    /*background-color: #afdab1;*/
+    margin-right: 5px;
+    overflow: auto;
+}
+
+#listaComensales {
+    margin-right: 20px;
+}
+
+#listaBotonesComensales {
+    height: 50px;
+    width: 50px;
+}
+
+.nombreComensal {
+    margin-bottom: 20px;
+}
+
+/*Historial*/
+
+.contenedorHistorial {
+    display: flex;
+    height: 70vh;
+    background-color: white;
+    padding: 0;
+}
+
+/*subContenedorHistorial*/
+.subContenedorHistorial {
+    display: flex;
+    height: 70%;
+    width: 70%;
+    align-items: flex-start;
+    justify-content: center;
+    /* background-color: #afdab1;*/
+    margin-right: 5px;
+    overflow: auto;
+}
+
+.listaConsumos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.btnConsumos {
+    background-color: #0277BD;
+    color: white;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+.btnConsumos:hover {
+    background-color: #039BE5;
+    color: white;
+}
+
+/*Ordenar*/
+#containerComprarMenu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#tituloComprarMenu {
+    padding-bottom: 10px;
+}
+
+.btnCalJun {
+    background-color: #1B5E20;
+    width: 70%;
+    color: white;
+}
+
+.btnCalJul {
+    background-color: #1B5E20;
+    width: 70%;
+    color: white;
+}
+
+
+.btnCalJun:hover {
+    background-color: #43A047;
+    width: 70%;
+    color: white;
+}
+
+.btnCalJul:hover {
+    background-color: #43A047;
+    width: 70%;
+    color: white;
+}
+
+#btncancelarMenuPendiente {
+    width: 45%;
+}
+
+#btnPagarMenuPendiente {
+    width: 45%;
+}
