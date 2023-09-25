@@ -1,0 +1,457 @@
+<!--HTML Comedor Escolar-->
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+	<title>Comedor Escolar</title>
+	<link rel="icon" href="./favicon.ico">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+	<!--NAV-->
+	<nav>
+		<ul class="nav justify-content-center nav-pills mb-3 p-3 position-relative" id="pills-tab" role="tablist">
+			<li class="col nav-item" role="presentation">
+				<button class="nav-link position-relative start-50 translate-middle-x" id="btnTabPerfil"
+					data-bs-toggle="pill" data-bs-target="#tabPerfil" type="button" role="tab" aria-controls="tabPerfil"
+					aria-selected="false">Perfil</button>
+			</li>
+			<li class="col  nav-item" role="presentation">
+				<button class="nav-link active position-relative start-50 translate-middle-x" id="btnTabOrdenar"
+					data-bs-toggle="pill" data-bs-target="#tabOrdenar" type="button" role="tab"
+					aria-controls="tabOrdenar" aria-selected="true">Ordenar</button>
+			</li>
+			<li class="col  nav-item" role="presentation">
+				<button class="nav-link position-relative start-50 translate-middle-x" id="btnTabHistorial"
+					data-bs-toggle="pill" data-bs-target="#tabHistorial" type="button" role="tab"
+					aria-controls="tabHistorial" aria-selected="false">Historial</button>
+			</li>
+		</ul>
+	</nav>
+
+	<!--TABS-->
+	<div class="tab-content" id="pills-tabContent">
+
+		<!--TAB Ordenar-->
+		<div class="tab-pane fade show active" id="tabOrdenar" role="tabpanel" tabindex="0">
+			<div class="section" id="sOrdenar">
+				<div class="a" id="ordenar"></div>
+
+				<!--Calendario-->
+
+				<div id="carouselExampleControlsNoTouching1" class="carousel slide" data-bs-touch="false">
+					<div class="carousel-inner">
+						<div class="carousel-item active" data-bs-wrap="false">
+							<div class="container text-center bg-light">
+								<div>
+									<h1 id="mesJunio"> Junio 2023 </h1>
+								</div>
+								<div class="calendar-body">
+									<div class="calendar-week-day">
+										<div>Lun</div>
+										<div>Mar</div>
+										<div>Mie</div>
+										<div>Jue</div>
+										<div>Vie</div>
+									</div>
+									<div class="calendar-days p-1">
+										<div></div>
+										<div></div>
+										<div></div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">1</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">2</div>
+									</div>
+									<div class="calendar-days p-1">
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">5</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">6</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">7</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">8</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">9</div>
+									</div>
+									<div class="calendar-days p-1">
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">12
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">13
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">14
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">15
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">16
+										</div>
+									</div>
+									<div class="calendar-days p-1">
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">19
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">20
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">21
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">22
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">23
+										</div>
+									</div>
+									<div class="calendar-days p-1">
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">26
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">27
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">28
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">29
+										</div>
+										<div class="btn btnCalJun position-relative start-50 translate-middle-x">30
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<div class="container text-center bg-light">
+								<div>
+									<h1 id="mesJulio"> Julio 2023 </h1>
+								</div>
+								<div class="calendar-body">
+									<div class="calendar-week-day">
+										<div>Lun</div>
+										<div>Mar</div>
+										<div>Mie</div>
+										<div>Jue</div>
+										<div>Vie</div>
+									</div>
+									<div class="calendar-days p-1">
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+									<div class="calendar-days p-1">
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">3</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">4</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">5</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">6</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">7</div>
+									</div>
+									<div class="calendar-days p-1">
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">10
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">11
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">12
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">13
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">14
+										</div>
+									</div>
+									<div class="calendar-days p-1">
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">17
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">18
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">19
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">20
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">21
+										</div>
+									</div>
+									<div class="calendar-days p-1">
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">24
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">25
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">26
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">27
+										</div>
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">28
+										</div>
+									</div>
+
+									<div class="calendar-days p-1">
+										<div class="btn btnCalJul position-relative start-50 translate-middle-x">31
+										</div>
+										<div></div>
+										<div></div>
+										<div></div>
+										<div></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button"
+						data-bs-target="#carouselExampleControlsNoTouching1" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon bg-success" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button"
+						data-bs-target="#carouselExampleControlsNoTouching1" data-bs-slide="next">
+						<span class="carousel-control-next-icon bg-success" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+
+				<!--Fin Calendario-->
+
+				<!-- Modales -->
+
+				<!-- Elegir Menu -->
+				<dialog id="modalMenu" style="overflow-y: auto;">
+					<span class="icon-close" id="cerrarModalMenu"><ion-icon name="close-outline"></ion-icon></span>
+					<div class="form-boxMenu">
+						<h3>Ordenar Menu</h3>
+						<div id="divBotonesOpcion" class="list-group list-group-horizontal">
+							<button id="btnOpcion1Menu" data-bs-toggle="list"
+								class="botonOpcion list-group-item list-group-item-action active">Opción 1</button>
+							<button id="btnOpcion2Menu" data-bs-toggle="list"
+								class="botonOpcion list-group-item list-group-item-action">Opción 2</button>
+						</div>
+						<div id="divPlatoPrinc">
+							<span id="spanPlatoPrincipal1"></span>
+							<span id="spanPlatoPrincipalCal1"></span>
+						</div>
+						<div id="divPostre">
+							<span id="spanPostre1"></span>
+							<span id="spanPostreCal1"></span>
+						</div>
+						<div id="divPreciosYCal">
+							<span id="spanPrecio1"></span>
+							<span id="spanCalTot1"></span>
+						</div>
+						<button id="btn-aceptarModalMenu" class="botonModal">Aceptar</button>
+					</div>
+				</dialog>
+
+				<!-- Comprar Menu -->
+				<dialog id="modalComprarMenu" style="overflow-y: auto;">
+					<span class="icon-close" id="cerrarModalComprarMenu"><ion-icon
+							name="close-outline"></ion-icon></span>
+					<div class="form-boxMenu" id="containerComprarMenu">
+						<h3 id="tituloComprarMenu">Comprar Menu</h3>
+						<p>Seleccione Comensales</p>
+						<div class="row">
+							<ul class="list-group" id="listaComensalesCM">
+							</ul>
+						</div>
+						<hr>
+						<p id="menuElegido"></p>
+						<p id="precioMenuSelec"></p>
+						<p id="saldoDisponible"></p>
+						<div class="row">
+
+						</div>
+						<button id="btn-aceptarModalMenuCompra" class="botonModal">Aceptar</button>
+					</div>
+				</dialog>
+
+				<dialog id="modalErrorOrdenar" style="overflow-y: auto;">
+					<span class="icon-close" id="cerrarModalErrorOrdenar"><ion-icon
+							name="close-outline"></ion-icon></span>
+					<h4 id="hModalFinOrdenar">Error</h4>
+					<div id="divModalErrorOrdenar">
+						<span id="spanModalErrorOrdenar"></span>
+					</div>
+				</dialog>
+
+				<!-- Fin Modales -->
+
+			</div>
+		</div>
+
+		<!--TAB Perfil-->
+		<div class="tab-pane fade" id="tabPerfil" role="tabpanel" tabindex="0">
+			<div class="container contenedorPerfil" id="sPerfil">
+				<div class="contenedorDivisiones" id="contenedorSaldo">
+					<div class="subtitulos der">Saldo</div>
+					<button class="btn btn-l btn-info" id="btn-cargarSaldo"> Cargar Saldo <span
+							type="ionicons"><ion-icon name="wallet-outline"></ion-icon></span></button>
+					<p id="etiquetaSaldo">Saldo: $0</p>
+				</div>
+				<div class="contenedorDivisiones" id="contenedorComensal">
+					<div class="subtitulos izq">Comensales</div>
+					<button class="col-4 btn btn-l btn-info" id="btn-agregarComensal">Agregar
+						Comensal
+						<span type="ionicons"><ion-icon name="person-add-outline"></ion-icon></span>
+					</button>
+					<div id="contenedorListas">
+						<ul id="listaComensales"></ul>
+						<!--<div id="listaBotonesComensales"></div>-->
+					</div>
+				</div>
+
+				<!-- Modales -->
+
+				<!-- Saldo -->
+				<dialog id="modalCargarSaldo" style="overflow-y: auto;">
+					<span class="icon-close" id="cerrarModalSaldo"><ion-icon name="close-outline"></ion-icon></span>
+					<div class="form-boxSaldo">
+						<h3>Cargar saldo</h3>
+						<form action="#">
+							<div class="inputBoxSaldo">
+								<span class="icon"><ion-icon name="cash-outline"></ion-icon></span>
+								<label for="inputSaldo">Saldo $</label>
+								<input type="number" id="inputSaldo">
+							</div>
+							<button id="btn-aceptarModalSaldo" class="botonModal">Aceptar</button>
+							<div id="divErrorSaldo">
+								<p class="text pt-2 d-none" id="errorSaldo"></p>
+							</div>
+						</form>
+					</div>
+				</dialog>
+
+				<!-- Agregar Comensal -->
+				<dialog id="modalAgregarComensal" style="overflow-y: auto;">
+					<span class="icon-close" id="cerrarModalComensal"><ion-icon name="close-outline"></ion-icon></span>
+					<div class="form-boxComensal">
+						<h3>Agregar un comensal</h3>
+						<form action="#">
+							<div class="inputBoxComensal">
+								<span class="icon"><ion-icon name="person-circle-outline"></ion-icon></span>
+								<label for="inputNombreComensal">Nombre</label>
+								<input type="text" id="inputNombreComensal" required>
+							</div>
+							<div class="inputBoxComensal">
+								<span class="icon"><ion-icon name="card-outline"></ion-icon></span>
+								<label for="inputCedulaComensal">Cédula</label>
+								<input type="number" id="inputCedulaComensal" required>
+							</div>
+							<button id="btn-aceptarModalComensal" class="botonModal">Aceptar</button>
+							<div id="divErrorComensal">
+							<p class="text pt-2 d-none" id="errorComensal"></p>
+							</div>
+						</form>
+					</div>
+				</dialog>
+
+				<!-- Modal Finalizado -->
+				<dialog id="modalFinalizado" style="overflow-y: auto;">
+					<span class="icon-close" id="cerrarModalFinalizado"><ion-icon
+							name="close-outline"></ion-icon></span>
+					<h4 id="hModalFin">Finalizado</h4>
+					<div>
+						<span id="spanModalFin"></span>
+					</div>
+				</dialog>
+
+				<!-- Fin Modales -->
+
+			</div>
+		</div>
+
+		<!--TAB Historial-->
+		<div class="tab-pane fade" id="tabHistorial" role="tabpanel" tabindex="0">
+			<div class="container contenedorHistorial">
+				<div class="contenedorDivisiones">
+					<div class="subtitulos der">Pendientes</div>
+					<div class="subContenedorHistorial" id="contenedorConsumosPendientes">
+						<ul class="listaConsumos d-none" id="listaConsumosPendientes"></ul>
+						<p id="etiquetaPendientes">No hay consumos Pendientes</p>
+					</div>
+				</div>
+				<div class="contenedorDivisiones" id="contenedorConsumosCompletados">
+					<div class="subtitulos izq">Completados</div>
+					<div class="subContenedorHistorial" id="subContenedorConsumosCompletados">
+						<ul class="listaConsumos d-none" id="listaConsumosCompletados"></ul>
+						<p id="etiquetaCompletados">No hay consumos Completados</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Modales -->
+
+			<!--Modal Pendientes-->
+			<dialog id="modalPendientes" style="overflow-y: auto;">
+				<span class="icon-close" id="cerrarModalPendientes"><ion-icon name="close-outline"></ion-icon></span>
+				<div class="form-boxPendientes">
+					<h3>Consumo pendiente</h3>
+					<div id="divComensalAsociadoPen">
+						<span id="spanComensalPen"></span>
+					</div>
+					<div id="divFechaPen">
+						<span id="spanFechaPen"></span>
+					</div>
+					<div id="divPlatoPrincPen">
+						<span id="spanPlatoPrincipalPen"></span>
+						<span id="spanPlatoPrincipalCalPen"></span>
+					</div>
+					<div id="divPostrePen">
+						<span id="spanPostrePen"></span>
+						<span id="spanPostreCalPen"></span>
+					</div>
+					<div id="divPreciosYCalPen">
+						<span id="spanPrecioPen"></span>
+						<span id="spanCalTotPen"></span>
+					</div>
+					<div id="divBotonesModPen" class ="row p-1">
+						<button id="btncancelarMenuPendiente" class="botonModal col-3">Cancelar</button>
+						<div class="col-1"></div>
+						<button id="btnPagarMenuPendiente" class="botonModal col-3">Pagar</button>
+					</div>
+				</div>
+			</dialog>
+
+			<!--Modal Completados-->
+			<dialog id="modalCompletados" style="overflow-y: auto;">
+				<span class="icon-close" id="cerrarModalCompletados"><ion-icon name="close-outline"></ion-icon></span>
+				<div class="form-boxCompletados">
+					<h3>Consumo completado</h3>
+					<div id="divComensalAsociadoCom">
+						<span id="spanComensalCom"></span>
+					</div>
+					<div id="divFechaCom">
+						<span id="spanFechaCom"></span>
+					</div>
+					<div id="divPlatoPrincCom">
+						<span id="spanPlatoPrincipalCom"></span>
+						<span id="spanPlatoPrincipalCalCom"></span>
+					</div>
+					<div id="divPostreCom">
+						<span id="spanPostreCom"></span>
+						<span id="spanPostreCalCom"></span>
+					</div>
+					<div id="divPreciosYCalCom">
+						<span id="spanPrecioCom"></span>
+						<span id="spanCalTotCom"></span>
+					</div>
+				</div>
+			</dialog>
+
+			<dialog id="modalErrorPagar" style="overflow-y: auto;">
+				<span class="icon-close" id="cerrarModalErrorPagar"><ion-icon
+						name="close-outline"></ion-icon></span>
+				<h4 id="hModalFinPagar">Error</h4>
+				<div id="divModalErrorPagar">
+					<span id="spanModalErrorPagar"></span>
+				</div>
+			</dialog>
+
+			<!--Fin modales-->
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+		crossorigin="anonymous"></script>
+
+	<script src="main.js" type="module"></script>
+
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
